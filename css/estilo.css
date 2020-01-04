@@ -24,7 +24,15 @@ body {
 }
 
 .box-2 {
-	padding: 8% 4%;
+	padding: 10% 8% 10% 8%;
+}
+
+.box-3 {
+	padding-top: 8%;
+}
+
+.box-4 {
+	padding: 4% 8% 10% 8%;
 }
 
 h2 {
@@ -71,6 +79,10 @@ p {
 
 .destaque .card {
 	margin-bottom: 5%;
+}
+
+hr {
+	margin: 0 5% 0 5%
 }
 
 /*-----------Footer-----------*/
