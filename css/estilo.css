@@ -85,6 +85,10 @@ hr {
 	margin: 0 5% 0 5%
 }
 
+.cartao {
+	width: 90%;
+}
+
 /*-----------Footer-----------*/
 footer {
 	background-color: #333333;
