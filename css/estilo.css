@@ -89,11 +89,6 @@ hr {
 	width: 90%;
 }
 
-a.custom-card,
-a.custom-card:hover {
-  color: inherit;
-}
-
 /*-----------Footer-----------*/
 footer {
 	background-color: #333333;
