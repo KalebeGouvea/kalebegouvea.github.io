@@ -1,0 +1,322 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------Layout da pagina--------------*/
+
+.fundo {
+    background-color: #3E3E3E;
+    min-height: 100vh;
+    display: flex;
+}
+
+.bloco {
+    max-width: 950px;
+    display: flex;
+    margin: auto;
+}
+
+.esquerda {
+    background-color: #D75441;
+    width: 45%;
+}
+
+.direita {
+    background-color: #252525;
+    padding: 30px;
+    width: 55%;
+}
+
+/*------------Lado Esquerdo--------------*/
+/*------------Estilo da logo--------------*/
+
+.logo01 {
+    font-size: 24px;
+    padding-left: 13px;
+    padding-top: 16px;
+}
+
+.logo:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo:visited {
+    color: #ffffff;
+}
+
+.logo:hover {
+    color: #000000;
+}
+
+.logo:active {
+    color: #ffffff;
+}
+
+.burger {
+    width: 80%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------Estilo das mensagens do lado esquerdo---------*/
+
+.msg1 {
+    color: #873226;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 96px;
+    margin-left: 13px;
+    line-height: 38px;
+}
+
+.msg2 {
+    color: #873226;
+    font-weight: bold;
+    font-size: 52px;
+    margin-bottom: 0px;
+    margin-left: 13px;
+}
+
+/*------------Lado Direito--------------*/
+/*------------Estilo dos titulos--------------*/
+
+.t1 {
+    color: #D75441;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+label {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+label.form-check-label {
+    font-weight: normal;
+}
+
+legend {
+    color: #FFFFFF;
+    font-weight: bold;    
+}
+
+/*------------Radio Button--------------*/
+/*------------Estilo dos inputs--------------*/
+
+.caixa {
+    background-color: #252525;
+    border: 2px solid #D75441;
+    height: 44px;
+    color: #FFFFFF;
+}
+
+.caixa::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #D75441;
+    opacity: 1; /* Firefox */
+
+}
+
+.caixa:focus {
+    background-color: #252525;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.caixa:focus::placeholder {
+    color: #FFFFFF;
+}
+
+/*------------Radio Button--------------*/
+
+.radio-group {
+    padding-top: 6px;
+}
+
+.radio {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;
+    position: relative;
+    padding-left: 25px;
+    font-weight: normal;
+}
+
+.radio + .radio {
+    margin-left: 15px;
+}
+
+.radio input[type="radio"] {
+    /*display: none;*/
+    opacity: 0;
+    position: absolute;
+    left: 3px;
+    top: 6px;
+}
+
+.radio span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #D75441;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.radio span:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #D75441;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: .2s ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+/*-------------W3 Schools Checkbox--------------*/
+
+/* The container */
+.checkofertas {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkofertas input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 0.1em solid #D75441;
+    border-radius: 0.2em;
+    transition: .2s;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkofertas input:checked ~ .checkmark {
+    background-color: #D75441;
+    border: 0.1em solid #D75441;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkofertas input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkofertas .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }  
+
+/*--------------Submit Button---------------*/
+
+.btn-laranja {
+    background-color: #D75441;
+    border-radius: 0;
+    border-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 180px;
+    height: 40px;
+}
+
+.btn-laranja:hover {
+    background-color: #a53f2f;
+}
+
+.btn-laranja:not(:disabled):not(.disabled).active, .btn-laranja:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #a53f2f;
+    border-color: #D75441;
+}
+
+.btn-laranja:focus {
+    color: #fff;
+    background-color: #a53f2f;
+    border-color: #D75441;
+    box-shadow: 0 0 0 0.2rem rgba(255, 63, 38, 0.5);
+}
+
+.btn-laranja:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 63, 38, 0.5);
+}
+
+/*--------------Date input icon---------------*/
+
+::-webkit-calendar-picker-indicator {
+    /*filter: invert(1);*/
+    opacity: 0;
+}
+
+/*--------------Layout telas menores---------------*/
+
+@media (max-width: 991.98px) {
+    
+    .conteudo {
+        display: none;    
+    }
+
+    .bloco {
+        flex-direction: column;
+    }
+
+    .esquerda, .direita {
+        width: auto;
+    }
+
+    .logo01 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+}
